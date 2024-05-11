@@ -1,0 +1,11 @@
+$custom-gradient1: linear-gradient(180deg, rgba(13, 20, 54, 1) 0%, rgba(40, 57, 119, 1) 30%, rgba(63, 69, 125, 1) 50%, rgba(40, 57, 119, 1) 70%, rgba(20, 36, 93, 1) 100%);
+$customer-gradient2: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 0.1) 100%),
+  linear-gradient(90deg, #84d2ff, #8d5acd);
+$customer-gradient3: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 0.1) 100%),
+  linear-gradient(90deg, #84d2ff, #8d5acd);
+$customer-gradient4: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(251, 251, 251, 0.1) 100%),
+  linear-gradient(to right, #6C9BD3, #84d2ff, #8d5acd);
+
+.custom-gradient {
+  background-image: $customer-gradient4;
+}
