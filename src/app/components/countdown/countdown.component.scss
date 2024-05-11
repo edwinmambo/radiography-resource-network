@@ -1,0 +1,56 @@
+$color_1: white;
+$font-family_1: "Courier New", Courier, monospace;
+$font-family_2: "Sedan SC", serif;
+
+/* Position text in the top-left corner */
+/* Position text in the bottom-left corner */
+/* Position text in the middle */
+/* Style the <hr> element */
+.bg-img {
+  background-image: url('/assets/images/forest-image.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: $color_1;
+  font-family: $font-family_2;
+  font-size: 25px;
+}
+
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 16px;
+
+  p {
+    font-size: 1.5em;
+  }
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+
+  .text-muted {
+    color: $color_1 !important;
+    font-size: 0.7em;
+  }
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  h1 {
+    font-size: 1.3em;
+  }
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
