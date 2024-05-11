@@ -4,8 +4,16 @@ import { CountdownComponent } from './components/countdown/countdown.component';
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  { path: 'countdown', component: CountdownComponent },
-  { path: 'home', component: HomeComponent },
+  {
+    path: 'countdown',
+    component: CountdownComponent,
+    title: 'Countdown - Radiography Resource Network',
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+    title: 'Home - Radiography Resource Network',
+  },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
 ];
