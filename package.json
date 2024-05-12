@@ -6,6 +6,7 @@
     "start": "ng serve",
     "start:o": "ng serve -o",
     "build": "ng build",
+    "build:docs": "ng build --base-href=./ --output-path=docs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

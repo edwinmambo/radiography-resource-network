@@ -14,8 +14,8 @@ const routes: Routes = [
     component: HomeComponent,
     title: 'Home - Radiography Resource Network',
   },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/countdown', pathMatch: 'full' },
+  { path: '**', redirectTo: '/countdown', pathMatch: 'full' },
 ];
 
 @NgModule({
