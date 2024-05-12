@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'rrn-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'radiography-resource-network';
+  title = 'Radiography Resource Network';
 }
