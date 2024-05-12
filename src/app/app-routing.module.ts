@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CountdownComponent } from './components/countdown/countdown.component';
 import { HomeComponent } from './components/home/home.component';
+import { LandingComponent } from './components/landing/landing.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,11 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     title: 'Home - Radiography Resource Network',
+  },
+  {
+    path: 'landing',
+    component: LandingComponent,
+    title: 'Landing - Radiography Resource Network',
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
