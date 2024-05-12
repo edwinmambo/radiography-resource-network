@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'rrn-countdown',
@@ -10,11 +11,11 @@ export class CountdownComponent implements OnInit, OnDestroy {
   timeLeft!: string;
   private countdownInterval: any;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     // Set the date we're counting down to
-    this.countdownDate = new Date('May 12, 2024 20:00:05');
+    this.countdownDate = new Date('May 12, 2024 21:40:00');
 
     // start the countdown
     this.startCountdown();
@@ -40,6 +41,8 @@ export class CountdownComponent implements OnInit, OnDestroy {
       // If the count down is finished, clear the interval
       if (distance < 0) {
         clearInterval(this.countdownInterval);
+        this.timeLeft = 'EXPIRED';
+        this.router.navigateByUrl('/landing');
       }
     }, 1000);
   }

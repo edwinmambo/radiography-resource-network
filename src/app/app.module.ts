@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CountdownComponent } from './components/countdown/countdown.component';
 import { HomeComponent } from './components/home/home.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { LandingFeaturesComponent } from './components/landing-features/landing-features.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CountdownComponent,
     HomeComponent,
-    LandingComponent
+    LandingComponent,
+    LandingFeaturesComponent
   ],
   imports: [
     BrowserModule,

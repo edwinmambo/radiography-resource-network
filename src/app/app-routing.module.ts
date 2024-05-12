@@ -20,8 +20,8 @@ const routes: Routes = [
     component: LandingComponent,
     title: 'Landing - Radiography Resource Network',
   },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/countdown', pathMatch: 'full' },
+  { path: '**', redirectTo: '/countdown', pathMatch: 'full' },
 ];
 
 @NgModule({
